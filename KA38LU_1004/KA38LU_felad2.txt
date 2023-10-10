@@ -1,0 +1,103 @@
+adamcsik@adamcsik-VirtualBox:~$ cd
+adamcsik@adamcsik-VirtualBox:~$ mkdir -p SzgepGyak/Check/Tmp
+adamcsik@adamcsik-VirtualBox:~$ cd SzgepGyak/
+adamcsik@adamcsik-VirtualBox:~/SzgepGyak$ mkdir -p Proba/Test/Unix
+adamcsik@adamcsik-VirtualBox:~/SzgepGyak$ cd Proba
+adamcsik@adamcsik-VirtualBox:~/SzgepGyak/Proba$ mkdir Linux
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── SzgepGyak
+│   ├── Check
+│   │   └── Tmp
+│   └── Proba
+│       ├── Linux
+│       └── Test
+│           └── Unix
+├── Videók
+└── Zenék
+
+15 directories, 0 files
+
+
+adamcsik@adamcsik-VirtualBox:/etc$ tree -d
+.
+├── acpi
+│   └── events
+├── alsa
+│   └── conf.d
+├── alternatives
+│   └── ldm-theme -> /usr/share/ldm/themes/mint
+├── apm
+│   ├── resume.d
+│   ├── scripts.d
+│   └── suspend.d
+├── apparmor
+...
+
+
+adamcsik@adamcsik-VirtualBox:~$ cp /etc/passwd SzgepGyak/Proba
+
+
+adamcsik@adamcsik-VirtualBox:~$ cp /etc/shadow SzgepGyak/Proba/Test
+cp: '/etc/shadow' nem nyitható meg olvasásra: Engedély megtagadva
+adamcsik@adamcsik-VirtualBox:~$ sudo cp /etc/shadow SzgepGyak/Proba/Test
+[sudo] adamcsik jelszava:       
+adamcsik@adamcsik-VirtualBox:~$ 
+
+
+adamcsik@adamcsik-VirtualBox:~$ cp /etc/*.conf SzgepGyak/Proba/Linux
+adamcsik@adamcsik-VirtualBox:~$ ls SzgepGyak/Proba/Linux
+adduser.conf          e2scrub.conf     kerneloops.conf  nftables.conf     sudo.conf
+apg.conf              fprintd.conf     ld.so.conf       nsswitch.conf     sudo_logsrvd.conf
+appstream.conf        fuse.conf        libao.conf       pam.conf          sysctl.conf
+brltty.conf           gai.conf         libaudit.conf    pnm2ppa.conf      ucf.conf
+ca-certificates.conf  hdparm.conf      logrotate.conf   request-key.conf  updatedb.conf
+casper.conf           host.conf        ltrace.conf      resolv.conf       usb_modeswitch.conf
+debconf.conf          inxi.conf        mke2fs.conf      rsyslog.conf      xattr.conf
+deluser.conf          kernel-img.conf  mtools.conf      sensors3.conf
+
+
+adamcsik@adamcsik-VirtualBox:~$ cp /etc/?a?s*d SzgepGyak/Check
+adamcsik@adamcsik-VirtualBox:~$ ls SzgepGyak/Check
+passwd  Tmp
+
+
+adamcsik@adamcsik-VirtualBox:~$ mv SzgepGyak/Proba/Test/* SzgepGyak/Proba/Linux
+
+
+adamcsik@adamcsik-VirtualBox:~$ touch SzgepGyak/Check/Adatok.txt
+
+
+adamcsik@adamcsik-VirtualBox:~$ rm SzgepGyak/Proba/Linux/*
+rm: eltávolítja az írásvédett 'SzgepGyak/Proba/Linux/shadow' nevű, „szabályos fájl” típusú elemet? i
+rm: 'SzgepGyak/Proba/Linux/Unix' nem törölhető: Ez egy könyvtár
+adamcsik@adamcsik-VirtualBox:~$ rm -r SzgepGyak/Proba/Linux/*
+
+
+adamcsik@adamcsik-VirtualBox:~$ rm -r SzgepGyak/Proba/
+
+
+adamcsik@adamcsik-VirtualBox:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+...
+
+
+adamcsik@adamcsik-VirtualBox:~$ less /etc/passwd
+
+
+adamcsik@adamcsik-VirtualBox:~$ file /bin/bash
+/bin/bash: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=33a5554034feb2af38e8c75872058883b2988bc5, for GNU/Linux 3.2.0, stripped
+adamcsik@adamcsik-VirtualBox:~$ file /etc/passwd
+/etc/passwd: ASCII text
+adamcsik@adamcsik-VirtualBox:~$ file /var/log/syslog
+/var/log/syslog: Unicode text, UTF-8 text, with very long lines (328)
+adamcsik@adamcsik-VirtualBox:~$ 

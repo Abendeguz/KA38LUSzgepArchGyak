@@ -1,0 +1,235 @@
+adamcsik@adamcsik-VirtualBox:~$ mkdir  KA38LU/
+adamcsik@adamcsik-VirtualBox:~$ mkdir -p KA38LU/bokor/banan
+adamcsik@adamcsik-VirtualBox:~$ dc KA38LU/bokor
+dc: Will not attempt to process directory KA38LU/bokor
+adamcsik@adamcsik-VirtualBox:~$ cd KA38LU/bokor
+adamcsik@adamcsik-VirtualBox:~/KA38LU/bokor$ mkdir mogyoro
+adamcsik@adamcsik-VirtualBox:~/KA38LU/bokor$ mkdir barack
+adamcsik@adamcsik-VirtualBox:~/KA38LU/bokor$ cd KA38LU
+bash: cd: KA38LU: Nincs ilyen fájl vagy könyvtár
+adamcsik@adamcsik-VirtualBox:~/KA38LU/bokor$ cd KA38LU
+bash: cd: KA38LU: Nincs ilyen fájl vagy könyvtár
+adamcsik@adamcsik-VirtualBox:~/KA38LU/bokor$ cd --
+adamcsik@adamcsik-VirtualBox:~$ cd KA38LU
+adamcsik@adamcsik-VirtualBox:~/KA38LU$ mkdir fa
+adamcsik@adamcsik-VirtualBox:~/KA38LU$ mkdir land
+adamcsik@adamcsik-VirtualBox:~/KA38LU$ cd fa
+adamcsik@adamcsik-VirtualBox:~/KA38LU/fa$ mkdir korte
+adamcsik@adamcsik-VirtualBox:~/KA38LU/fa$ cd--
+cd--: a parancs nem található
+adamcsik@adamcsik-VirtualBox:~/KA38LU/fa$ cd --
+adamcsik@adamcsik-VirtualBox:~$ cd KA38LU
+adamcsik@adamcsik-VirtualBox:~/KA38LU$ cd land
+adamcsik@adamcsik-VirtualBox:~/KA38LU/land$ mkdir szeder
+adamcsik@adamcsik-VirtualBox:~/KA38LU/land$ mkdir kokusz
+adamcsik@adamcsik-VirtualBox:~/KA38LU/land$ tree
+.
+├── kokusz
+└── szeder
+
+2 directories, 0 files
+adamcsik@adamcsik-VirtualBox:~/KA38LU/land$ cd
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── KA38LU
+│   ├── bokor
+│   │   ├── banan
+│   │   ├── barack
+│   │   └── mogyoro
+│   ├── fa
+│   │   └── korte
+│   └── land
+│       ├── kokusz
+│       └── szeder
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── SzgepGyak
+│   └── Check
+│       ├── Adatok.txt
+│       ├── passwd
+│       └── Tmp
+├── Videók
+└── Zenék
+
+21 directories, 2 files
+adamcsik@adamcsik-VirtualBox:~$ cp KA38LU/land/szeder KA38LU/fa
+cp: a -r nincs megadva, 'KA38LU/land/szeder' könyvtár kihagyása
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── KA38LU
+│   ├── bokor
+│   │   ├── banan
+│   │   ├── barack
+│   │   └── mogyoro
+│   ├── fa
+│   │   └── korte
+│   └── land
+│       ├── kokusz
+│       └── szeder
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── SzgepGyak
+│   └── Check
+│       ├── Adatok.txt
+│       ├── passwd
+│       └── Tmp
+├── Videók
+└── Zenék
+
+21 directories, 2 files
+adamcsik@adamcsik-VirtualBox:~$ cp -r KA38LU/land/szeder KA38LU/fa
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── KA38LU
+│   ├── bokor
+│   │   ├── banan
+│   │   ├── barack
+│   │   └── mogyoro
+│   ├── fa
+│   │   ├── korte
+│   │   └── szeder
+│   └── land
+│       ├── kokusz
+│       └── szeder
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── SzgepGyak
+│   └── Check
+│       ├── Adatok.txt
+│       ├── passwd
+│       └── Tmp
+├── Videók
+└── Zenék
+
+22 directories, 2 files
+adamcsik@adamcsik-VirtualBox:~$ cp -r KA38LU/bokor/banan KA38LU/fa
+adamcsik@adamcsik-VirtualBox:~$ mv KA38LU/land/szeder KA38LU/fa
+adamcsik@adamcsik-VirtualBox:~$ mv KA38LU/land/kokusz KA38LU/fa
+adamcsik@adamcsik-VirtualBox:~$ rmdir KA38LU/land
+adamcsik@adamcsik-VirtualBox:~$ touch KA38LU/bokor/banan/leiras.txt
+adamcsik@adamcsik-VirtualBox:~$ mkdir KA38LU/tree
+adamcsik@adamcsik-VirtualBox:~$ touch KA38LU/tree/felsorolas.txt
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── KA38LU
+│   ├── bokor
+│   │   ├── banan
+│   │   │   └── leiras.txt
+│   │   ├── barack
+│   │   └── mogyoro
+│   ├── fa
+│   │   ├── banan
+│   │   ├── kokusz
+│   │   ├── korte
+│   │   └── szeder
+│   └── tree
+│       └── felsorolas.txt
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── SzgepGyak
+│   └── Check
+│       ├── Adatok.txt
+│       ├── passwd
+│       └── Tmp
+├── Videók
+└── Zenék
+
+22 directories, 4 files
+adamcsik@adamcsik-VirtualBox:~$ cd KA38LU/bokor/banan
+adamcsik@adamcsik-VirtualBox:~/KA38LU/bokor/banan$ vi leiras.txt 
+adamcsik@adamcsik-VirtualBox:~/KA38LU/bokor/banan$ less leiras.txt 
+adamcsik@adamcsik-VirtualBox:~/KA38LU/tree$ vi felsorolas.txt 
+adamcsik@adamcsik-VirtualBox:~$ ls -R KA38LU
+KA38LU:
+bokor  fa  tree
+
+KA38LU/bokor:
+banan  barack  mogyoro
+
+KA38LU/bokor/banan:
+leiras.txt
+
+KA38LU/bokor/barack:
+
+KA38LU/bokor/mogyoro:
+
+KA38LU/fa:
+banan  kokusz  korte  szeder
+
+KA38LU/fa/banan:
+
+KA38LU/fa/kokusz:
+
+KA38LU/fa/korte:
+
+KA38LU/fa/szeder:
+
+KA38LU/tree:
+felsorolas.txt
+adamcsik@adamcsik-VirtualBox:~$ ls /?e*
+/dev:
+autofs           hwrng         ppp       tty1   tty30  tty51      ttyS13  ttyS6      vcsa4
+block            i2c-0         psaux     tty10  tty31  tty52      ttyS14  ttyS7      vcsa5
+bsg              initctl       ptmx      tty11  tty32  tty53      ttyS15  ttyS8      vcsa6
+btrfs-control    input         pts       tty12  tty33  tty54      ttyS16  ttyS9      vcsa7
+bus              kmsg          random    tty13  tty34  tty55      ttyS17  udmabuf    vcsu
+cdrom            log           rfkill    tty14  tty35  tty56      ttyS18  uhid       vcsu1
+char             loop0         rtc       tty15  tty36  tty57      ttyS19  uinput     vcsu2
+console          loop1         rtc0      tty16  tty37  tty58      ttyS2   urandom    vcsu3
+core             loop2         sda       tty17  tty38  tty59      ttyS20  userio     vcsu4
+cpu              loop3         sda1      tty18  tty39  tty6       ttyS21  vboxguest  vcsu5
+cpu_dma_latency  loop4         sda2      tty19  tty4   tty60      ttyS22  vboxuser   vcsu6
+cuse             loop5         sda3      tty2   tty40  tty61      ttyS23  vcs        vcsu7
+disk             loop6         sg0       tty20  tty41  tty62      ttyS24  vcs1       vfio
+dma_heap         loop7         sg1       tty21  tty42  tty63      ttyS25  vcs2       vga_arbiter
+dri              loop-control  shm       tty22  tty43  tty7       ttyS26  vcs3       vhci
+ecryptfs         mapper        snapshot  tty23  tty44  tty8       ttyS27  vcs4       vhost-net
+fb0              mcelog        snd       tty24  tty45  tty9       ttyS28  vcs5       vhost-vsock
+fd               mem           sr0       tty25  tty46  ttyprintk  ttyS29  vcs6       zero
+full             mqueue        stderr    tty26  tty47  ttyS0      ttyS3   vcs7       zfs
+fuse             net           stdin     tty27  tty48  ttyS1      ttyS30  vcsa
+hidraw0          null          stdout    tty28  tty49  ttyS10     ttyS31  vcsa1
+hpet             nvram         tty       tty29  tty5   ttyS11     ttyS4   vcsa2
+hugepages        port          tty0      tty3   tty50  ttyS12     ttyS5   vcsa3
+
+/media:
+adamcsik
+adamcsik@adamcsik-VirtualBox:~/KA38LU/tree$ chmod a+r felsorolas.txt
+adamcsik@adamcsik-VirtualBox:~/KA38LU/tree$ ls -l felsorolas.txt 
+-rw-rw-r-- 1 adamcsik adamcsik 66 okt   10 21:25 felsorolas.txt
+adamcsik@adamcsik-VirtualBox:~$ du -c KA38LU
+4	KA38LU/bokor/mogyoro
+4	KA38LU/bokor/barack
+8	KA38LU/bokor/banan
+20	KA38LU/bokor
+8	KA38LU/tree
+4	KA38LU/fa/szeder
+4	KA38LU/fa/banan
+4	KA38LU/fa/korte
+4	KA38LU/fa/kokusz
+20	KA38LU/fa
+52	KA38LU
+52	összesen
+adamcsik@adamcsik-VirtualBox:~$ cd KA38LU/tree
+adamcsik@adamcsik-VirtualBox:~/KA38LU/tree$ sort felsorolas.txt 
+Baba Levente
+Balogh Dominik
+Balogh Márk
+Bodó Tamás
+Cser Máté

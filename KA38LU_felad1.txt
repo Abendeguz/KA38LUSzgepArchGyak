@@ -1,0 +1,602 @@
+1. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ pwd
+/home/adamcsik
+
+2. Feladat:
+adamcsik@adamcsik-VirtualBox:~$ cd /
+adamcsik@adamcsik-VirtualBox:/$ pwd
+/
+
+3. Feladat:
+
+adamcsik@adamcsik-VirtualBox:/$ cd
+adamcsik@adamcsik-VirtualBox:~$ pwd
+/home/adamcsik
+
+4. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ cd /root
+bash: cd: /root: Engedély megtagadva
+
+5. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ cd /etc
+
+6. Feladat:
+
+adamcsik@adamcsik-VirtualBox:/etc$ cd ..
+
+7. Feladat:
+
+adamcsik@adamcsik-VirtualBox:/$ ls
+bin    dev   lib    libx32      mnt   root  srv       tmp
+boot   etc   lib32  lost+found  opt   run   swapfile  usr
+cdrom  home  lib64  media       proc  sbin  sys       var
+
+8. Feladat:
+
+adamcsik@adamcsik-VirtualBox:/$ ls -l /etc
+összesen 1244
+drwxr-xr-x  3 root root    4096 júl   11 18:29 acpi
+-rw-r--r--  1 root root    3028 júl   11 17:33 adduser.conf
+-rw-r--r--  1 root root      10 okt    3 20:11 adjtime
+drwxr-xr-x  3 root root    4096 júl   11 18:11 alsa
+drwxr-xr-x  2 root root    4096 okt    3 20:23 alternatives
+-rw-r--r--  1 root root     335 márc  23  2022 anacrontab
+-rw-r--r--  1 root root     433 márc  23  2022 apg.conf
+drwxr-xr-x  5 root root    4096 júl   11 18:12 apm
+drwxr-xr-x  3 root root    4096 júl   11 18:26 apparmor
+drwxr-xr-x  7 root root    4096 okt    3 21:20 apparmor.d
+drwxr-xr-x  4 root root    4096 okt    3 20:22 apport
+-rw-r--r--  1 root root     769 febr  22  2022 appstream.conf
+drwxr-xr-x  8 root root    4096 okt    3 20:23 apt
+drwxr-xr-x  3 root root    4096 júl   11 18:31 avahi
+-rw-r--r--  1 root root    2319 jan    6  2022 bash.bashrc
+...
+adamcsik@adamcsik-VirtualBox:/$ ls -l /var
+összesen 36
+drwxr-xr-x  2 root root   4096 okt    5 19:39 backups
+drwxr-xr-x 18 root root   4096 okt    3 20:22 cache
+drwxr-xr-x 71 root root   4096 okt    3 21:39 lib
+drwxrwsr-x  2 root staff  4096 ápr   18  2022 local
+lrwxrwxrwx  1 root root      9 okt    3 20:08 lock -> /run/lock
+drwxrwxr-x 12 root syslog 4096 okt    8 18:04 log
+drwxrwsr-x  2 root mail   4096 júl   11 17:32 mail
+drwxr-xr-x  2 root root   4096 júl   11 17:32 opt
+lrwxrwxrwx  1 root root      4 okt    3 20:08 run -> /run
+drwxr-xr-x  7 root root   4096 júl   11 18:12 spool
+drwxrwxrwt  9 root root   4096 okt    8 18:05 tmp
+...
+adamcsik@adamcsik-VirtualBox:/$ ls -l /log
+ls: '/log' nem érhető el: Nincs ilyen fájl vagy könyvtár
+adamcsik@adamcsik-VirtualBox:/$ ls -l /var/log
+összesen 2776
+-rw-r--r--  1 root              root              43840 okt    3 21:20 alternatives.log
+drwxr-xr-x  2 root              root               4096 okt    5 20:47 apt
+-rw-r-----  1 syslog            adm                2747 okt    8 18:30 auth.log
+-rw-r-----  1 syslog            adm               24083 okt    8 18:04 auth.log.1
+-rw-------  1 root              root               2632 okt    8 18:04 boot.log
+-rw-------  1 root              root              26666 okt    8 18:04 boot.log.1
+-rw-r--r--  1 root              root             129616 júl   11 17:36 bootstrap.log
+-rw-rw----  1 root              utmp                  0 júl   11 17:32 btmp
+drwxr-xr-x  2 root              root               4096 okt    8 18:04 cups
+-rw-r-----  1 root              adm               49344 okt    8 18:04 dmesg
+-rw-r-----  1 root              adm               49019 okt    5 19:27 dmesg.0
+-rw-r-----  1 root              adm               14996 okt    3 21:25 dmesg.1.gz
+-rw-r-----  1 root              adm               15067 okt    3 20:32 dmesg.2.gz
+-rw-r--r--  1 root              root            1353487 okt    5 20:47 dpkg.log
+-rw-r--r--  1 root              root              32032 okt    3 21:06 faillog
+-rw-r--r--  1 root              root              11211 júl   11 18:34 fontconfig.log
+-rw-r--r--  1 root              root               1300 okt    8 18:04 gpu-manager.log
+drwxr-xr-x  3 root              root               4096 júl   11 18:17 hp
+drwxr-xr-x  2 root              root               4096 okt    3 20:23 installer
+drwxr-sr-x+ 3 root              systemd-journal    4096 okt    3 20:31 journal
+-rw-r-----  1 syslog            adm                2065 okt    8 18:04 kern.log
+-rw-r-----  1 syslog            adm              271932 okt    8 18:04 kern.log.1
+...
+
+9. Feladat:
+
+adamcsik@adamcsik-VirtualBox:/$ cd
+adamcsik@adamcsik-VirtualBox:~$ mkdir Teszt
+adamcsik@adamcsik-VirtualBox:~$ ls
+Asztal        Képek       Nyilvános  Teszt   Zenék
+Dokumentumok  Letöltések  Sablonok   Videók
+
+10. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ mkidir Teszt/T1 Teszt/T2
+„mkidir” parancs nem található, erre gondolt:
+  „mkdir” parancs coreutils (8.32-4.1ubuntu1) deb csomagból
+Próbálja ki ezt: sudo apt install <deb_neve>
+adamcsik@adamcsik-VirtualBox:~$ mkdir Teszt/T1 Teszt/T2
+adamcsik@adamcsik-VirtualBox:~$ ls
+Asztal        Képek       Nyilvános  Teszt   Zenék
+Dokumentumok  Letöltések  Sablonok   Videók
+
+11. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ cd Teszt
+adamcsik@adamcsik-VirtualBox:~/Teszt$ ls
+T1  T2
+adamcsik@adamcsik-VirtualBox:~/Teszt$ tree
+.
+├── T1
+└── T2
+
+2 directories, 0 files
+adamcsik@adamcsik-VirtualBox:~/Teszt$ cd
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── Teszt
+│   ├── T1
+│   └── T2
+├── Videók
+└── Zenék
+
+11 directories, 0 files
+
+12. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ mkdir -p Teszt/Unix/Linux/Debian
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── Teszt
+│   ├── T1
+│   ├── T2
+│   └── Unix
+│       └── Linux
+│           └── Debian
+├── Videók
+└── Zenék
+
+14 directories, 0 files
+
+13. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ mv Teszt/Unix/Linux/Debian Teszt/Unix/Linux/Deb
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── Teszt
+│   ├── T1
+│   ├── T2
+│   └── Unix
+│       └── Linux
+│           └── Deb
+├── Videók
+└── Zenék
+
+14 directories, 0 files
+
+14. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ mv Teszt/Unix/Linux/Deb Teszt/T1
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── Teszt
+│   ├── T1
+│   │   └── Deb
+│   ├── T2
+│   └── Unix
+│       └── Linux
+├── Videók
+└── Zenék
+
+14 directories, 0 files
+
+15. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ rmdir Teszt/T1
+rmdir: 'Teszt/T1' eltávolítása meghiúsult: A könyvtár nem üres
+adamcsik@adamcsik-VirtualBox:~$ rmdir -p Teszt/T1
+rmdir: 'Teszt/T1' eltávolítása meghiúsult: A könyvtár nem üres
+adamcsik@adamcsik-VirtualBox:~$ rm -r Teszt/T1
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── Teszt
+│   ├── T2
+│   └── Unix
+│       └── Linux
+├── Videók
+└── Zenék
+
+12 directories, 0 files
+
+16. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ rm -r Teszt
+adamcsik@adamcsik-VirtualBox:~$ tree
+.
+├── Asztal
+├── Dokumentumok
+├── Képek
+├── Letöltések
+├── Nyilvános
+├── Sablonok
+├── Videók
+└── Zenék
+
+8 directories, 0 files
+
+17. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls
+Asztal  Dokumentumok  Képek  Letöltések  Nyilvános  Sablonok  Videók  Zenék
+
+18. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls -l /etc
+összesen 1244
+drwxr-xr-x  3 root root    4096 júl   11 18:29 acpi
+-rw-r--r--  1 root root    3028 júl   11 17:33 adduser.conf
+-rw-r--r--  1 root root      10 okt    3 20:11 adjtime
+drwxr-xr-x  3 root root    4096 júl   11 18:11 alsa
+drwxr-xr-x  2 root root    4096 okt    3 20:23 alternatives
+-rw-r--r--  1 root root     335 márc  23  2022 anacrontab
+-rw-r--r--  1 root root     433 márc  23  2022 apg.conf
+drwxr-xr-x  5 root root    4096 júl   11 18:12 apm
+drwxr-xr-x  3 root root    4096 júl   11 18:26 apparmor
+drwxr-xr-x  7 root root    4096 okt    3 21:20 apparmor.d
+drwxr-xr-x  4 root root    4096 okt    3 20:22 apport
+-rw-r--r--  1 root root     769 febr  22  2022 appstream.conf
+...
+
+19. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls /etc/conf
+ls: '/etc/conf' nem érhető el: Nincs ilyen fájl vagy könyvtár
+adamcsik@adamcsik-VirtualBox:~$ ls /etc/*.conf
+/etc/adduser.conf          /etc/host.conf        /etc/pam.conf
+/etc/apg.conf              /etc/inxi.conf        /etc/pnm2ppa.conf
+/etc/appstream.conf        /etc/kernel-img.conf  /etc/request-key.conf
+/etc/brltty.conf           /etc/kerneloops.conf  /etc/resolv.conf
+/etc/ca-certificates.conf  /etc/ld.so.conf       /etc/rsyslog.conf
+/etc/casper.conf           /etc/libao.conf       /etc/sensors3.conf
+/etc/debconf.conf          /etc/libaudit.conf    /etc/sudo.conf
+/etc/deluser.conf          /etc/logrotate.conf   /etc/sudo_logsrvd.conf
+/etc/e2scrub.conf          /etc/ltrace.conf      /etc/sysctl.conf
+/etc/fprintd.conf          /etc/mke2fs.conf      /etc/ucf.conf
+/etc/fuse.conf             /etc/mtools.conf      /etc/updatedb.conf
+/etc/gai.conf              /etc/nftables.conf    /etc/usb_modeswitch.conf
+/etc/hdparm.conf           /etc/nsswitch.conf    /etc/xattr.conf
+
+20. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls /etc/p*
+/etc/pam.conf   /etc/passwd   /etc/pnm2ppa.conf  /etc/profile
+/etc/papersize  /etc/passwd-  /etc/printcap      /etc/protocols
+
+/etc/pam.d:
+chfn                  common-session                 login     runuser-l
+chpasswd              common-session-noninteractive  newusers  samba
+chsh                  cron                           other     su
+cinnamon-screensaver  cups                           passwd    sudo
+common-account        lightdm                        polkit-1  sudo-i
+common-auth           lightdm-autologin              ppp       su-l
+common-password       lightdm-greeter                runuser   vmtoolsd
+
+/etc/pcmcia:
+config.opts
+
+/etc/perl:
+Net  XML
+
+/etc/pki:
+fwupd  fwupd-metadata
+
+/etc/pm:
+config.d  power.d  sleep.d
+
+/etc/polkit-1:
+localauthority  localauthority.conf.d
+
+/etc/ppp:
+chap-secrets  ip-pre-up    ip-up.d      ipv6-up    options.pptp  resolv
+ip-down       ip-pre-up.d  ipv6-down    ipv6-up.d  pap-secrets
+ip-down.d     ip-up        ipv6-down.d  options    peers
+
+/etc/profile.d:
+01-locale-fix.sh    debuginfod.sh  gawk.sh               vte.csh
+bash_completion.sh  flatpak.sh     im-config_wayland.sh
+debuginfod.csh      gawk.csh       vte-2.91.sh
+
+/etc/pulse:
+client.conf  client.conf.d  daemon.conf  default.pa  default.pa.d  system.pa
+
+/etc/python3:
+debian_config
+
+/etc/python3.10:
+sitecustomize.py
+
+21. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls /etc/*f
+/etc/adduser.conf          /etc/host.conf        /etc/pam.conf
+/etc/apg.conf              /etc/inxi.conf        /etc/pnm2ppa.conf
+/etc/appstream.conf        /etc/kernel-img.conf  /etc/request-key.conf
+/etc/brltty.conf           /etc/kerneloops.conf  /etc/resolv.conf
+/etc/ca-certificates.conf  /etc/ld.so.conf       /etc/rsyslog.conf
+/etc/casper.conf           /etc/libao.conf       /etc/sensors3.conf
+/etc/debconf.conf          /etc/libaudit.conf    /etc/sudo.conf
+/etc/deluser.conf          /etc/logrotate.conf   /etc/sudo_logsrvd.conf
+/etc/e2scrub.conf          /etc/ltrace.conf      /etc/sysctl.conf
+/etc/fprintd.conf          /etc/mke2fs.conf      /etc/ucf.conf
+/etc/fuse.conf             /etc/mtools.conf      /etc/updatedb.conf
+/etc/gai.conf              /etc/nftables.conf    /etc/usb_modeswitch.conf
+/etc/hdparm.conf           /etc/nsswitch.conf    /etc/xattr.conf
+
+/etc/dconf:
+db
+
+/etc/groff:
+man.local  mdoc.local
+
+22. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls /etc/p?s*d
+/etc/passwd
+
+23. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls -a /home
+.  ..  adamcsik
+adamcsik@adamcsik-VirtualBox:~$ sl -a ~
+„sl” parancs nem található, de telepíthető így:
+sudo apt install sl
+adamcsik@adamcsik-VirtualBox:~$ ls -a ~
+.              .profile
+..             Sablonok
+Asztal         .sudo_as_admin_successful
+.bash_history  .vboxclient-clipboard-tty7-control.pid
+.bash_logout   .vboxclient-clipboard-tty7-service.pid
+.bashrc        .vboxclient-draganddrop-tty7-control.pid
+.cache         .vboxclient-draganddrop-tty7-service.pid
+.config        .vboxclient-hostversion-tty7-control.pid
+Dokumentumok   .vboxclient-seamless-tty7-control.pid
+.gtkrc-2.0     .vboxclient-seamless-tty7-service.pid
+.gtkrc-xfce    .vboxclient-vmsvga-session-tty7-control.pid
+Képek          .vboxclient-vmsvga-session-tty7-service.pid
+Letöltések     Videók
+.linuxmint     .Xauthority
+.local         .xsession-errors
+.mozilla       .xsession-errors.old
+Nyilvános      Zenék
+
+24. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls /etc/?[a n]*
+ls: '/etc/?[a' nem érhető el: Nincs ilyen fájl vagy könyvtár
+ls: 'n]*' nem érhető el: Nincs ilyen fájl vagy könyvtár
+adamcsik@adamcsik-VirtualBox:~$ ls /etc/?[an]*
+/etc/anacrontab                     /etc/gai.conf       /etc/manpath.config
+/etc/bash.bashrc                    /etc/inputrc        /etc/nanorc
+/etc/bash_completion                /etc/inxi.conf      /etc/pam.conf
+/etc/ca-certificates.conf           /etc/machine-id     /etc/papersize
+/etc/ca-certificates.conf.dpkg-old  /etc/magic          /etc/passwd
+/etc/casper.conf                    /etc/magic.mime     /etc/passwd-
+/etc/catdocrc                       /etc/mailcap        /etc/pnm2ppa.conf
+/etc/environment                    /etc/mailcap.order  /etc/xattr.conf
+
+/etc/bash_completion.d:
+apt-linux-mint
+
+/etc/ca-certificates:
+update.d
+
+/etc/environment.d:
+90atk-adaptor.conf  90qt-a11y.conf
+
+/etc/gnome:
+defaults.list  menus.blacklist
+
+/etc/gnome-app-install:
+packages-whitelist
+
+/etc/init:
+lightdm.conf
+
+/etc/init.d:
+acpid             hwclock.sh         procps
+alsa-utils        irqbalance         pulseaudio-enable-autospawn
+anacron           kerneloops         rsync
+apparmor          keyboard-setup.sh  saned
+avahi-daemon      kmod               speech-dispatcher
+bluetooth         lightdm            udev
+console-setup.sh  lm-sensors         ufw
+cron              lvm2               uuidd
+cryptdisks        lvm2-lvmpolld      x11-common
+cryptdisks-early  mintsystem         zfs-import
+cups              networking         zfs-mount
+cups-browsed      open-vm-tools      zfs-share
+dbus              openvpn            zfs-zed
+dns-clean         plymouth
+grub-common       plymouth-log
+
+/etc/initramfs-tools:
+conf.d  hooks  initramfs.conf  modules  scripts  update-initramfs.conf
+
+/etc/java-11-openjdk:
+accessibility.properties  management            security
+jfr                       net.properties        sound.properties
+jvm-amd64.cfg             psfontj2d.properties  swing.properties
+logging.properties        psfont.properties.ja
+
+/etc/PackageKit:
+PackageKit.conf  Vendor.conf
+
+/etc/pam.d:
+chfn                  common-session                 login     runuser-l
+chpasswd              common-session-noninteractive  newusers  samba
+chsh                  cron                           other     su
+cinnamon-screensaver  cups                           passwd    sudo
+common-account        lightdm                        polkit-1  sudo-i
+common-auth           lightdm-autologin              ppp       su-l
+common-password       lightdm-greeter                runuser   vmtoolsd
+
+/etc/samba:
+gdbcommands  smb.conf  tls
+
+/etc/sane.d:
+abaton.conf          dll.conf       kvs1025.conf     rts8891.conf
+agfafocus.conf       dll.d          leo.conf         s9036.conf
+airscan.conf         dmc.conf       lexmark.conf     saned.conf
+apple.conf           epjitsu.conf   ma1509.conf      sceptre.conf
+artec.conf           epson2.conf    magicolor.conf   sharp.conf
+artec_eplus48u.conf  epson.conf     matsushita.conf  sm3840.conf
+avision.conf         epsonds.conf   microtek2.conf   snapscan.conf
+bh.conf              escl.conf      microtek.conf    sp15c.conf
+canon630u.conf       fujitsu.conf   mustek.conf      st400.conf
+canon.conf           genesys.conf   mustek_pp.conf   stv680.conf
+canon_dr.conf        gphoto2.conf   mustek_usb.conf  tamarack.conf
+canon_lide70.conf    gt68xx.conf    nec.conf         teco1.conf
+canon_pp.conf        hp3900.conf    net.conf         teco2.conf
+cardscan.conf        hp4200.conf    p5.conf          teco3.conf
+coolscan2.conf       hp5400.conf    pie.conf         test.conf
+coolscan3.conf       hp.conf        pieusb.conf      u12.conf
+coolscan.conf        hpsj5s.conf    pixma.conf       umax1220u.conf
+dc210.conf           hs2p.conf      plustek.conf     umax.conf
+dc240.conf           ibm.conf       plustek_pp.conf  umax_pp.conf
+dc25.conf            kodakaio.conf  qcam.conf        xerox_mfp.conf
+dell1600n_net.conf   kodak.conf     ricoh.conf
+
+/etc/snmp:
+snmp.conf
+
+25. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls /etc/?[!an]*
+/etc/adduser.conf            /etc/issue.net        /etc/request-key.conf
+/etc/adjtime                 /etc/kernel-img.conf  /etc/resolv.conf
+/etc/apg.conf                /etc/kerneloops.conf  /etc/rmt
+/etc/appstream.conf          /etc/ld.so.cache      /etc/rpc
+/etc/bindresvport.blacklist  /etc/ld.so.conf       /etc/rsyslog.conf
+/etc/brlapi.key              /etc/legal            /etc/sensors3.conf
+/etc/brltty.conf             /etc/libao.conf       /etc/services
+/etc/crontab                 /etc/libaudit.conf    /etc/shadow
+/etc/debconf.conf            /etc/locale.alias     /etc/shadow-
+/etc/debian_version          /etc/locale.gen       /etc/shells
+/etc/deluser.conf            /etc/localtime        /etc/subgid
+/etc/e2scrub.conf            /etc/login.defs       /etc/subgid-
+...
+
+26. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ ls -R /
+/:
+bin    dev   lib    libx32      mnt   root  srv       tmp
+boot   etc   lib32  lost+found  opt   run   swapfile  usr
+cdrom  home  lib64  media       proc  sbin  sys       var
+
+/boot:
+config-5.15.0-76-generic      initrd.img.old
+config-5.15.0-84-generic      System.map-5.15.0-76-generic
+efi                           System.map-5.15.0-84-generic
+grub                          vmlinuz
+initrd.img                    vmlinuz-5.15.0-76-generic
+initrd.img-5.15.0-76-generic  vmlinuz-5.15.0-84-generic
+initrd.img-5.15.0-84-generic  vmlinuz.old
+ls: nem lehet a következő könyvtárat megnyitni: '/boot/efi': Engedély megtagadva
+
+/boot/grub:
+fonts             grub.cfg  i386-pc  unicode.pf2
+gfxblacklist.txt  grubenv   locale   x86_64-efi
+
+/boot/grub/fonts:
+unicode.pf2
+
+/boot/grub/i386-pc:
+915resolution.mod     gcry_twofish.mod          pata.mod
+acpi.mod              gcry_whirlpool.mod        pbkdf2.mod
+adler32.mod           gdb.mod                   pbkdf2_test.mod
+affs.mod              geli.mod                  pcidump.mod
+afs.mod               gettext.mod               pci.mod
+afsplitter.mod        gfxmenu.mod               pgp.mod
+ahci.mod              gfxterm_background.mod    plan9.mod
+
+...
+
+27. Feladat:
+
+adamcsik@adamcsik-VirtualBox:~$ mc
+„mc” parancs nem található, de telepíthető így:
+sudo apt install mc
+adamcsik@adamcsik-VirtualBox:~$ sudo apt install mc
+[sudo] adamcsik jelszava:       
+Csomaglisták olvasása... Kész
+Függőségi fa építése... Kész
+Állapotinformációk olvasása... Kész
+A következő további csomagok lesznek telepítve:
+  libssh2-1 mc-data
+Javasolt csomagok:
+  arj catdvi | texlive-binaries dbview djvulibre-bin epub-utils gv imagemagick
+  libaspell-dev links | w3m | lynx python python-boto python-tz unar wimtools
+Az alábbi ÚJ csomagok lesznek telepítve:
+  libssh2-1 mc mc-data
+0 frissített, 3 újonnan telepített, 0 eltávolítandó és 12 nem frissített.
+Letöltendő adatmennyiség: 2.084 kB.
+A művelet után 8.209 kB lemezterület kerül felhasználásra.
+Folytatni akarja? [I/n] i
+Letöltés:1 http://repo.jztkft.hu/ubuntu jammy/universe amd64 libssh2-1 amd64 1.10.0-3 [109 kB]
+Letöltés:2 http://repo.jztkft.hu/ubuntu jammy/universe amd64 mc-data all 3:4.8.27-1 [1.427 kB]
+Letöltés:3 http://repo.jztkft.hu/ubuntu jammy/universe amd64 mc amd64 3:4.8.27-1 [547 kB]
+Letöltve 2.084 kB 1mp alatt (1.477 kB/s)
+A korábban ki nem választott libssh2-1:amd64 csomag kiválasztása.
+(Adatbázis olvasása ... 564866 fájl és könyvtár van jelenleg telepítve.)
+Kibontás előkészítése: .../libssh2-1_1.10.0-3_amd64.deb ...
+Kibontás: libssh2-1:amd64 (1.10.0-3) ...
+A korábban ki nem választott mc-data csomag kiválasztása.
+Kibontás előkészítése: .../mc-data_3%3a4.8.27-1_all.deb ...
+Kibontás: mc-data (3:4.8.27-1) ...
+A korábban ki nem választott mc csomag kiválasztása.
+Kibontás előkészítése: .../mc_3%3a4.8.27-1_amd64.deb ...
+Kibontás: mc (3:4.8.27-1) ...
+Beállítás: mc-data (3:4.8.27-1) ...
+Beállítás: libssh2-1:amd64 (1.10.0-3) ...
+Beállítás: mc (3:4.8.27-1) ...
+update-alternatives: /usr/bin/mcview használata /usr/bin/view (view) biztosításá
+hoz automatikus módban
+Aktiválók feldolgozása: gnome-menus (3.36.0-1ubuntu3) ...
+Aktiválók feldolgozása: libc-bin (2.35-0ubuntu3.3) ...
+Aktiválók feldolgozása: man-db (2.10.2-1) ...
+Aktiválók feldolgozása: mailcap (3.70+nmu1ubuntu1) ...
+Aktiválók feldolgozása: desktop-file-utils (0.26+mint3+victoria) ...
+Aktiválók feldolgozása: hicolor-icon-theme (0.17-2) ...
+Aktiválók feldolgozása: doc-base (0.11.1) ...
+Processing 1 added doc-base file...
+adamcsik@adamcsik-VirtualBox:~$ mc
+
+adamcsik@adamcsik-VirtualBox:~$ less .bash_history
+adamcsik@adamcsik-VirtualBox:~$ ^C
+adamcsik@adamcsik-VirtualBox:~$ ^C

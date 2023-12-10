@@ -20,9 +20,12 @@ article, section, aside, nav, header, footer {
   width: 560px
   font-size: 10pt;
   font-family: Helvetica;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  border-top: 3px #888888 double;
+  padding-top: 30px;
+  text-align: left;
   font-weight: bold;
+}
   
 </style>
 </head>
@@ -77,7 +80,8 @@ A böngésző nem támogattja a HTML audió lejátszását.
 </section>
 
 <footer id="lablec" class"lablec">
-Forrás:
+<b>Forrás:</b>
+<br><br>
 <a href="https://www.w3schools.com/html5_audio.asp" target="ujablak">
 https://www.w3schools.com/html5_audio.asp
 </a>
@@ -85,14 +89,19 @@ https://www.w3schools.com/html5_audio.asp
 
 <srcipt>
 
-var videom = document.getElementById('videom');
+var zenem = document.getElementById("zene");
+var effektem = document.getElementById("effekt");
 
-function indit_leallit() {
-if(videom.paused){
-videom.play();
+zenem.onended = function() {
+  alert("VÉGE");
+}
+
+function playPause() {
+if(zenem.paused){
+zenem.play();
 }
 else {
-videom.pause();
+zenem.pause();
 }
 }
 
